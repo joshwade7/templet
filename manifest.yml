@@ -1,0 +1,42 @@
+modules:
+  jira:dashboardGadget:
+    - key: templet
+      title: templet
+      description: A gadget to compare workflow schemes between projects in a JIRA space.
+      thumbnail: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+      function: main
+      #edit:
+      #  function: edit
+  function:
+    - key: main
+      handler: index.runView
+    - #key: edit
+      #handler: index.runEdit
+app:
+  id: ari:cloud:ecosystem::app/23835ed2-65f9-4ce9-9755-a3cabe871e4b
+permissions:
+  scopes:
+    - read:issue-meta:jira
+    - read:issue-security-level:jira
+    - read:issue.vote:jira
+    - read:issue.changelog:jira
+    - read:avatar:jira
+    - read:issue:jira
+    - read:status:jira
+    - read:user:jira
+    - read:field-configuration:jira
+    - read:issue-details:jira
+    - read:audit-log:jira
+    - read:issue-type-hierarchy:jira
+    - read:user:jira
+    - read:application-role:jira
+    - read:issue-type:jira
+    - read:project:jira
+    - read:project.property:jira
+    - read:project-category:jira
+    - read:project.component:jira
+    - read:group:jira
+    - read:project-version:jira
+    - read:workflow-scheme:jira
+    - read:workflow:jira
+    - read:issue-type-scheme:jira
